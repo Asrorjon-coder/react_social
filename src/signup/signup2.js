@@ -17,7 +17,7 @@ function Signup1() {
                                                         padding-right: 40px; 
                                                         padding-left: 40px;
                                                         padding-top: 40px;
-                                                        padding-bottom: 30px; 
+                                                        padding-bottom: 35px; 
                                                         display: flex;
                                                         flex-wrap: nowrap;
                                                         align-items: center;
