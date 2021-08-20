@@ -31,9 +31,10 @@ function Signup1() {
             form[6].setAttribute('style', `margin-top: 40px;
                                                             display: flex;
                                                             justify-content: center`);
+            par.addEventListener('load', handleResize);
         }
 
-        document.onreadystatechange = handleResize;
+        window.addEventListener('load', handleResize);
     });
     return (
         <Container>
