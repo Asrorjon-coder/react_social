@@ -2,6 +2,7 @@ import './fonts/material-design-iconic-font/css/material-design-iconic-font.min.
 import rgform2 from "./images/mifi-bg-4.jpg"
 import {Container, Form} from "react-bootstrap";
 import React from "react";
+import './../loader';
 
 function Signup1() {
     React.useEffect(() => {
@@ -31,10 +32,9 @@ function Signup1() {
             form[6].setAttribute('style', `margin-top: 40px;
                                                             display: flex;
                                                             justify-content: center`);
-            par.addEventListener('load', handleResize);
         }
-
-        window.addEventListener('load', handleResize);
+        window.$(window).on('load', handleResize);
+        window.$(window).bind('load', handleResize);
     });
     return (
         <Container>
