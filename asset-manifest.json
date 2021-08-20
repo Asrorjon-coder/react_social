@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react_social/static/css/main.ef54d1c3.chunk.css",
-    "main.js": "/react_social/static/js/main.53c820f9.chunk.js",
-    "main.js.map": "/react_social/static/js/main.53c820f9.chunk.js.map",
-    "runtime-main.js": "/react_social/static/js/runtime-main.ffade8c4.js",
-    "runtime-main.js.map": "/react_social/static/js/runtime-main.ffade8c4.js.map",
-    "static/js/2.915c88d5.chunk.js": "/react_social/static/js/2.915c88d5.chunk.js",
-    "static/js/2.915c88d5.chunk.js.map": "/react_social/static/js/2.915c88d5.chunk.js.map",
-    "index.html": "/react_social/index.html",
-    "static/css/main.ef54d1c3.chunk.css.map": "/react_social/static/css/main.ef54d1c3.chunk.css.map",
-    "static/js/2.915c88d5.chunk.js.LICENSE.txt": "/react_social/static/js/2.915c88d5.chunk.js.LICENSE.txt",
-    "static/media/material-design-iconic-font.min.css": "/react_social/static/media/Material-Design-Iconic-Font.bd9b02bf.woff",
-    "static/media/mifi-bg-4.656579da.jpg": "/react_social/static/media/mifi-bg-4.656579da.jpg"
+    "main.css": "/Asrorjon-coder/react_social.git/static/css/main.23923112.chunk.css",
+    "main.js": "/Asrorjon-coder/react_social.git/static/js/main.91ff6252.chunk.js",
+    "main.js.map": "/Asrorjon-coder/react_social.git/static/js/main.91ff6252.chunk.js.map",
+    "runtime-main.js": "/Asrorjon-coder/react_social.git/static/js/runtime-main.b25509cf.js",
+    "runtime-main.js.map": "/Asrorjon-coder/react_social.git/static/js/runtime-main.b25509cf.js.map",
+    "static/js/2.915c88d5.chunk.js": "/Asrorjon-coder/react_social.git/static/js/2.915c88d5.chunk.js",
+    "static/js/2.915c88d5.chunk.js.map": "/Asrorjon-coder/react_social.git/static/js/2.915c88d5.chunk.js.map",
+    "index.html": "/Asrorjon-coder/react_social.git/index.html",
+    "static/css/main.23923112.chunk.css.map": "/Asrorjon-coder/react_social.git/static/css/main.23923112.chunk.css.map",
+    "static/js/2.915c88d5.chunk.js.LICENSE.txt": "/Asrorjon-coder/react_social.git/static/js/2.915c88d5.chunk.js.LICENSE.txt",
+    "static/media/material-design-iconic-font.min.css": "/Asrorjon-coder/react_social.git/static/media/Material-Design-Iconic-Font.bd9b02bf.woff",
+    "static/media/mifi-bg-4.656579da.jpg": "/Asrorjon-coder/react_social.git/static/media/mifi-bg-4.656579da.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ffade8c4.js",
+    "static/js/runtime-main.b25509cf.js",
     "static/js/2.915c88d5.chunk.js",
-    "static/css/main.ef54d1c3.chunk.css",
-    "static/js/main.53c820f9.chunk.js"
+    "static/css/main.23923112.chunk.css",
+    "static/js/main.91ff6252.chunk.js"
   ]
 }
