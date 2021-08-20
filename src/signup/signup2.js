@@ -10,26 +10,38 @@ function Signup1() {
             var w = window.innerWidth;
             const par = document.querySelector("#parent");
             const form = document.querySelectorAll("#f");
-            par.setAttribute('style', `margin-left: ${5*w / 12}px;
+            const back = document.querySelector("#back")
+
+            function width() {
+                if (getComputedStyle(back,null).getPropertyValue("width") >= 250) {
+                    return w/6;
+                }
+                return 250;
+            }
+
+            console.log(width());
+
+            par.setAttribute('style', `margin-left: ${(5 * w / 12) - 45}px;
                                                         margin-top: ${h / 3}px;
+                                                        width: ${width()}px;
                                                         border: 5px solid black;
-                                                        width: ${w / 6}px;
-                                                        padding-right: 40px; 
-                                                        padding-left: 40px;
-                                                        padding-top: 40px;
-                                                        padding-bottom: 35px; 
+                                                        padding-right: 0px; 
+                                                        padding-left: 0px;
+                                                        padding-top: 25px;
+                                                        padding-bottom: 30px; 
                                                         display: flex;
-                                                        flex-wrap: nowrap;
                                                         align-items: center;
                                                         justify-content: center;
-                                                        background-color: white`);
+                                                        background-color: #fce5de`);
             var index = 0;
             for (; index < form.length; index++) {
                 form[index].setAttribute('style', `margin-bottom: 10px;
                                                                     display: flex;
                                                                     justify-content: center`)
-            };
-        };
+            }
+
+            form[0].setAttribute('style', `margin-bottom: 40px`);
+        }
 
         window.addEventListener('resize', handleResize);
         window.addEventListener('load', handleResize)
@@ -41,13 +53,15 @@ function Signup1() {
                 backgroundSize: "cover",
                 backgroundPositionY: "70%",
                 height: "100vh",
-                width: "100vw",
+                width: "100%",
                 position: "fixed"
-            }}>
+            }} id="back">
                 <div id="parent">
                     <div className="row">
-                        <Form method="post" action="/signup">
-                            <div id="f"><p><h2>Registration</h2></p></div>
+                        <Form method="post" action="/">
+                            <div id="f">
+                                <center><h2>Registration</h2></center>
+                            </div>
                             <div className="col-md-2" id="f">
                                 <Form.Group controlId="formBasicName">
                                     <i className="zmdi zmdi-account-box"/> <Form.Label>Full name</Form.Label><p/>
