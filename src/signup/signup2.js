@@ -34,7 +34,6 @@ function Signup1() {
         }
 
         window.addEventListener('load', handleResize);
-        window.addEventListener('resize', handleResize);
     });
     return (
         <Container>
