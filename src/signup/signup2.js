@@ -33,8 +33,8 @@ function Signup1() {
                                                             justify-content: center`);
         }
 
+        window.addEventListener('load', handleResize);
         window.addEventListener('resize', handleResize);
-        window.addEventListener('load', handleResize)
     });
     return (
         <Container>
