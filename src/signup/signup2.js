@@ -1,62 +1,23 @@
 import './fonts/material-design-iconic-font/css/material-design-iconic-font.min.css';
-import rgform2 from "./images/mifi-bg-4.jpg"
-import {Container, Form} from "react-bootstrap";
-import React from "react";
+import {Form} from "react-bootstrap";
+import React, {Component} from "react";
 import './../loader';
+import 'jquery';
+import "./css/signup.css"
 
-function Signup1() {
-    React.useEffect(() => {
-        function handleResize() {
-            const par = document.querySelector("#parent");
-            const form = document.querySelectorAll("#f");
-            par.setAttribute('style', `width: 250px;
-                                                        border: 5px solid black;
-                                                        padding-right: 0px; 
-                                                        padding-left: 0px;
-                                                        padding-top: 25px;
-                                                        padding-bottom: 30px; 
-                                                        display: flex;
-                                                        align-items: center;
-                                                        justify-content: center;
-                                                        background-color: #fce5de`);
-            var index = 0;
-            for (; index < form.length; index++) {
-                form[index].setAttribute('style', `margin-bottom: 10px;
-                                                                    display: flex;
-                                                                    justify-content: center`)
-            }
-
-            form[0].setAttribute('style', `margin-bottom: 40px;
-                                                            display: flex;
-                                                            justify-content: center`);
-            form[6].setAttribute('style', `margin-top: 40px;
-                                                            display: flex;
-                                                            justify-content: center`);
-        }
-        window.$(window).on('load', handleResize);
-        window.$(window).bind('load', handleResize);
-    });
-    return (
-        <Container>
-            <div style={{
-                backgroundImage: `url(${rgform2})`,
-                backgroundSize: "cover",
-                backgroundPositionY: "70%",
-                height: "100vh",
-                width: "100%",
-                position: "fixed",
-                display: "flex",
-                alignItems: "center",
-                justifyItems: "center",
-                justifyContent: "center"
-            }}>
-                <div id="parent">
+class Signup extends Component {
+    render() {
+        return <div>
+            <div className="back">
+                <div className="parent" id="parent">
                     <div className="row">
                         <Form method="post" action="/">
-                            <div id="f">
+                            <div id="ff">
                                 <h2>Registration</h2>
                             </div>
-                            <div className="col-md-2" id="f">
+                            <div className="col-md-2" id="f" style={{
+                                marginTop: "50px"
+                            }}>
                                 <Form.Group controlId="formBasicName">
                                     <i className="zmdi zmdi-account-box"/> <Form.Label>Full name</Form.Label><p/>
                                     <Form.Control type="fullname" placeholder="Enter your full name"/>
@@ -86,7 +47,7 @@ function Signup1() {
                                     <Form.Control type="password" placeholder="Confirm your Password"/>
                                 </Form.Group>
                             </div>
-                            <div className="col-md-2" id="f">
+                            <div className="col-md-2" id="fl">
                                 <button>Register
                                     <i className="zmdi zmdi-arrow-right"/>
                                 </button>
@@ -95,8 +56,8 @@ function Signup1() {
                     </div>
                 </div>
             </div>
-        </Container>
-    );
+        </div>
+    }
 }
 
-export default Signup1;
+export default Signup;
