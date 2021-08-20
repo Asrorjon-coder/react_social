@@ -6,24 +6,9 @@ import React from "react";
 function Signup1() {
     React.useEffect(() => {
         function handleResize() {
-            var h = window.innerHeight;
-            var w = window.innerWidth;
             const par = document.querySelector("#parent");
             const form = document.querySelectorAll("#f");
-            const back = document.querySelector("#back")
-
-            function width() {
-                if (getComputedStyle(back,null).getPropertyValue("width") >= 250) {
-                    return w/6;
-                }
-                return 250;
-            }
-
-            console.log(width());
-
-            par.setAttribute('style', `margin-left: ${(5 * w / 12) - 45}px;
-                                                        margin-top: ${h / 3}px;
-                                                        width: ${width()}px;
+            par.setAttribute('style', `width: 250px;
                                                         border: 5px solid black;
                                                         padding-right: 0px; 
                                                         padding-left: 0px;
@@ -40,7 +25,12 @@ function Signup1() {
                                                                     justify-content: center`)
             }
 
-            form[0].setAttribute('style', `margin-bottom: 40px`);
+            form[0].setAttribute('style', `margin-bottom: 40px;
+                                                            display: flex;
+                                                            justify-content: center`);
+            form[6].setAttribute('style', `margin-top: 40px;
+                                                            display: flex;
+                                                            justify-content: center`);
         }
 
         window.addEventListener('resize', handleResize);
@@ -54,13 +44,17 @@ function Signup1() {
                 backgroundPositionY: "70%",
                 height: "100vh",
                 width: "100%",
-                position: "fixed"
-            }} id="back">
+                position: "fixed",
+                display: "flex",
+                alignItems: "center",
+                justifyItems: "center",
+                justifyContent: "center"
+            }}>
                 <div id="parent">
                     <div className="row">
                         <Form method="post" action="/">
                             <div id="f">
-                                <center><h2>Registration</h2></center>
+                                <h2>Registration</h2>
                             </div>
                             <div className="col-md-2" id="f">
                                 <Form.Group controlId="formBasicName">
