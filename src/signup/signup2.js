@@ -33,7 +33,7 @@ function Signup1() {
                                                             justify-content: center`);
         }
 
-        window.addEventListener('load', handleResize);
+        window.onload = handleResize;
     });
     return (
         <Container>
